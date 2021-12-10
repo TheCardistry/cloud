@@ -11,7 +11,7 @@ SessionSecret = ${SESSION_SECRET}
 HashIDSalt = ${HASH_ID_SALT}
 [Database]
 ; 数据库类型，目前支持 sqlite/mysql/mssql/postgres
-Type = postgres
+Type = ${DATABASE_TYPE}
 ; MySQL 端口
 Port = ${DATABASE_PORT}
 ; 用户名
@@ -23,7 +23,9 @@ Host = ${DATABASE_HOST}
 ; 数据库名称
 Name = ${DATABASE_NAME}
 ; 数据表前缀
-TablePrefix = cd_
+TablePrefix = cd
+; 字符集
+Charset = utf8
 EOF
 /root/cloudreve/cloudreve -c /root/cloudreve/mycloudreve.ini
 #/root/cloudreve/cloudreve
