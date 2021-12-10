@@ -21,6 +21,10 @@
       "description": "DATABASE_HOST",
       "value": "MyEnv value"
     },
+    "DATABASE_TYPE": {
+      "description": "DATABASE_TYPE",
+      "value": "MyEnv value"
+    },
     "DATABASE_USER": {
       "description": "DATABASE_USER",
       "value": "MyEnv value"
